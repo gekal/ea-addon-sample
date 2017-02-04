@@ -35,6 +35,12 @@
     <RegisterForComInterop>true</RegisterForComInterop>
     <FileAlignment>1024</FileAlignment>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\Program Files %28x86%29\SparxSystems Japan\EA\EA.exe</StartProgram>
+    <StartArguments>..\..\..\setup\Sample.eap</StartArguments>
+    <EnableUnmanagedDebugging>true</EnableUnmanagedDebugging>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Interop.EA">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\SparxSystems Japan\EA\Interop.EA.dll</HintPath>

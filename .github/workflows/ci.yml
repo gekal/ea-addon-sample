@@ -18,8 +18,8 @@ permissions:
   contents: read
 
 env:
-  # プロジェクトページ（https://gekal.github.io/ea-addon-sample/）はサブパス配下に置かれる。
-  # 独自ドメインでルート配信にするときは空文字にする。
+  # プロジェクトページ（https://www.gekal.cn/ea-addon-sample/）はサブパス配下に置かれる。
+  # ルート配信へ移すときは空文字にする。
   NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
 
 defaults:

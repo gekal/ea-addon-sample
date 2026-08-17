@@ -3,7 +3,7 @@
 Sparx Systems Enterprise Architect（EA）へ独自メニューを追加する、C# 製アドインの最小サンプルです。
 EA のメニューから `EASample > Sample` を選ぶと `Hello world!` のダイアログが出ます。
 
-**ドキュメント: <https://gekal.github.io/ea-addon-sample/>**
+**ドキュメント: <https://www.gekal.cn/ea-addon-sample/>**
 
 ビルド・登録・デバッグ・トラブルシューティングの手順はすべてドキュメントサイトにあります。
 

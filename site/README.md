@@ -4,7 +4,7 @@
 Next.js の App Router を `output: 'export'` で静的書き出しし、GitHub Pages で配信しています。
 サーバもデータベースも持ちません。
 
-公開URL: <https://gekal.github.io/ea-addon-sample/>
+公開URL: <https://www.gekal.cn/ea-addon-sample/>
 
 ## 前提
 

@@ -8,8 +8,14 @@ export const SITE = {
   name: 'EA アドインサンプル',
   description:
     'Sparx Systems Enterprise Architect の C# アドインを作るための最小サンプルと、ビルド・登録・デバッグの手順書。',
-  /** 本番の公開URL。GitHub Pages のプロジェクトページなのでリポジトリ名まで含む。末尾スラッシュなし */
-  url: 'https://gekal.github.io/ea-addon-sample',
+  /**
+   * 本番の公開URL。末尾スラッシュなし。
+   *
+   * ユーザーページに独自ドメインが当たっているため、gekal.github.io は
+   * www.gekal.cn へ 301 される。canonical と OGP は転送先を書く。
+   * プロジェクトページなのでリポジトリ名（basePath）まで含む。
+   */
+  url: 'https://www.gekal.cn/ea-addon-sample',
   locale: 'ja_JP',
   author: 'gekal',
   /** ソースコードの置き場所。ヘッダーと各ページから参照する */

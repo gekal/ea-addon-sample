@@ -41,8 +41,13 @@ jobs:
           cache: npm
           cache-dependency-path: site/package-lock.json
 
+      # npm ci ではなく npm install を使う。
+      # wasm 版の optional な依存（@tailwindcss/oxide-wasm32-wasi など）は
+      # ロックファイルを作った環境の npm と runner の npm で解決が食い違い、
+      # npm ci が EUSAGE（Missing: @emnapi/... from lock file）で落ちるため。
+      # ロックファイルは commit してあり、内容が一致していればそのまま使われる。
       - name: 依存関係をインストール
-        run: npm ci
+        run: npm install --no-audit --no-fund
 
       # tsc は TypeScript 7（@typescript/native）。TS6 比で数倍速い。
       - name: 型チェック
